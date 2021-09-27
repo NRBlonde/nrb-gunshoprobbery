@@ -31,7 +31,18 @@ end)
 RegisterServerEvent('nrb-soygun:kutuver')
 AddEventHandler('nrb-soygun:kutuver', function()
     local xPlayer = ESX.GetPlayerFromId(source)
-    xPlayer.addInventoryItem("silahkutusu", 1)
+    local number = math.random(1,4)
+								
+    if number == 1 then
+        xPlayer.addInventoryItem('WEAPON_SWITCHBLADE', 1)
+    elseif number == 2 then
+        xPlayer.addInventoryItem('water', 1)
+        
+    elseif number == 3 then
+        xPlayer.addInventoryItem('bread', 1)
+    elseif number == 4 then
+        xPlayer.addInventoryItem('lockpick', 1)
+    end
 end)
 
 RegisterServerEvent('nrb-soygun:kartsil')
