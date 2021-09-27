@@ -67,7 +67,7 @@ function KasaAra()
     --    TaskPlayAnim(PlayerPedId(), "mini@repair", "fixing_a_ped", 1.0, 1.0, 1.0, 1, 0.0, 0, 0, 0)	
         TriggerEvent("mythic_progbar:client:progress", {
           name = "unique_action_name",
-          duration = 180000, --60 saniye
+          duration = 180000, --180 saniye
           label = "Kasa Aranıyor",
           useWhileDead = false,
           canCancel = true,
